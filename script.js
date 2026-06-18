@@ -39,7 +39,7 @@ function sendMessage() {
     chatInput.focus();
 
     setTimeout(() => {
-        appendMessage('Streamer', userResponses[Math.floor(Math.random() * userResponses.length)]);
+        appendMessage('Zoink', userResponses[Math.floor(Math.random() * userResponses.length)]);
     }, 700);
 }
 

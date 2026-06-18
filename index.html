@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrmPunch - Live Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="StrmPunch Logo" class="logo">
+        <div>
+            <h1>StrmPunch</h1>
+            <p class="tagline">Live Entertainment Redefined</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="video">
+            <div class="live">🔴 LIVE</div>
+            <div class="video-player">
+                <video id="streamVideo" class="stream-video" autoplay muted playsinline loop>
+                    <source src="Grief2.mp4" type="video/mp4">
+                </video>
+                <button id="playOverlay" class="play-overlay">▶ Play</button>
+                <div id="videoError" class="video-error" hidden></div>
+            </div>
+            <p>Tune in for exclusive live streams and entertainment</p>
+        </div>
+
+        <div class="chat">
+            <h3>💬 Live Chat</h3>
+            <div id="messages" class="messages"></div>
+            <div class="input-row">
+                <input 
+                    type="text" 
+                    id="chatInput" 
+                    placeholder="Send a message..."
+                    aria-label="Chat message input"
+                >
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 StrmPunch. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
